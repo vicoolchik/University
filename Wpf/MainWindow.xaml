@@ -1,0 +1,32 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="211" Width="402">
+    <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" Content="CRUD for Entities"/>
+
+        <Grid Grid.Row="1" Height="90" Margin="60,5,60,5" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions  >
+                <RowDefinition />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Grid.Column="1" Margin="5,5,5,5"  Content="MyClass" Click="OpenClassWindow"/>
+            <Button Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Content="Professor" Click="OpenProfessorWindow"/>
+        </Grid>
+
+    </Grid>
+</Window>
